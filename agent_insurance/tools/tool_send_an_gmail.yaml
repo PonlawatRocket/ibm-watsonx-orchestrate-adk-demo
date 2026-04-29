@@ -1,0 +1,36 @@
+openapi: 3.0.0
+info:
+  title: Send Gmail Tool
+  description: Sends an email via Gmail using a Cloud Run backend.
+  version: 1.0.0
+servers:
+  - url: https://send-gmail-790391780398.asia-southeast3.run.app
+paths:
+  /:
+    post:
+      summary: Send an email
+      description: Sends an email to the specified recipient with a subject and body via Gmail API.
+      operationId: tool_send_an_gmail
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                to_email: {type: string}
+                subject: {type: string}
+                body: {type: string}
+              required:
+                - to_email
+                - subject
+                - body
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  output: {type: string}

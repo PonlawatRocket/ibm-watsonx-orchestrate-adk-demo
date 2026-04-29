@@ -1,0 +1,41 @@
+openapi: 3.0.0
+info:
+  title: Insurance Client Tool
+  description: Adds insurance lead data to a Google Spreadsheet.
+  version: 1.1.0
+servers:
+  - url: https://update-spreadsheet-tool-790391780398.asia-southeast3.run.app  # <--- REPLACE THIS
+paths:
+  /:
+    post:
+      summary: Update spreadsheet
+      description : Updates the insurance policy spreadsheet with the given data.
+      operationId: tool_update_spreadsheet
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                first_name: {type: string}
+                last_name: {type: string}
+                age: {type: integer}
+                monthly_income_in_thb: {type: number}
+                medical_conditions: {type: string}
+                preferred_tier: {type: string}
+                issue_date: {type: string, format: date}
+              required:
+                - first_name
+                - last_name
+                - age
+                - monthly_income_in_thb
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  output: {type: string}

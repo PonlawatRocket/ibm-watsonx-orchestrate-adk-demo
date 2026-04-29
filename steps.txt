@@ -1,0 +1,16 @@
+# install wxo adk
+pip install ibm-watsonx-orchestrate
+
+# create wxo env
+orchestrate env add -n <environment-name> -u <service-instance-url>
+
+# activate wxo env
+orchestrate env activate <environment-name>
+
+# deactivate wxo env
+orchestrate logout
+# or
+orchestrate logout --name <environment-name>
+
+# remove wxo env
+orchestrate env remove -n <environment-name>
