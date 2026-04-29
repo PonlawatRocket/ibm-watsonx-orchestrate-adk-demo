@@ -4,7 +4,7 @@ info:
   description: Sends an email via Gmail using a Cloud Run backend.
   version: 1.0.0
 servers:
-  - url: https://send-gmail-790391780398.asia-southeast3.run.app
+  - url: <FUNCTION_URL_TOOL_SEND_AN_GMAIL>
 paths:
   /:
     post:
