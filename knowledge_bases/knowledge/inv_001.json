@@ -1,0 +1,22 @@
+{
+  "invoice_id": "INV-2025-0042",
+  "invoice_date": "2025-04-15",
+  "due_date": "2025-05-15",
+  "supplier": {
+    "id": "SUP-0089",
+    "name": "TechParts Co., Ltd.",
+    "tax_id": "0105565012345"
+  },
+  "bill_to": "Acme Corporation (Thailand)",
+  "line_items": [
+    { "description": "Laptop Dell Latitude 5540", "qty": 10, "unit_price": 28000, "total": 280000 },
+    { "description": "Laptop Dell Latitude 5540", "qty": 10, "unit_price": 28000, "total": 280000 },
+    { "description": "Wireless Mouse Logitech M330", "qty": 10, "unit_price": 850, "total": 8500 }
+  ],
+  "subtotal": 568500,
+  "vat_7_percent": 39795,
+  "total_amount": 608295,
+  "currency": "THB",
+  "payment_terms": "Net 30",
+  "po_reference": "PO-2025-0101"
+}

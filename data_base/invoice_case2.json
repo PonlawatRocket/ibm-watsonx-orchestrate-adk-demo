@@ -1,0 +1,31 @@
+{
+  "invoice_id": "INV-2026-0102",
+  "invoice_date": "2026-04-30",
+  "due_date": "2026-05-30",
+  "supplier": {
+    "id": "SUP-9999",
+    "name": "Unknown Trading Co., Ltd.",
+    "tax_id": "0105599999999"
+  },
+  "bill_to": "Acme Corporation (Thailand) Co., Ltd.",
+  "line_items": [
+    {
+      "description": "Server Rack Dell PowerEdge R750",
+      "qty": 2,
+      "unit_price": 185000,
+      "total": 370000
+    },
+    {
+      "description": "Rack Mounting Kit",
+      "qty": 2,
+      "unit_price": 3500,
+      "total": 7000
+    }
+  ],
+  "subtotal": 377000,
+  "vat_7_percent": 26390,
+  "total_amount": 403390,
+  "currency": "THB",
+  "payment_terms": "Net 30",
+  "po_reference": "PO-2026-0202"
+}

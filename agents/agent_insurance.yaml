@@ -2,6 +2,7 @@ spec_version: v1
 kind: native
 style: react
 name: agent_insurance
+display_name: Insurance
 llm: groq/openai/gpt-oss-120b
 description: >
   An insurance policy recommendation agent for ABC Insurance.

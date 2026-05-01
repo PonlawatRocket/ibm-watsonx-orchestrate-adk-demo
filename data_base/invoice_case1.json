@@ -1,0 +1,31 @@
+{
+  "invoice_id": "INV-2026-0101",
+  "invoice_date": "2026-04-30",
+  "due_date": "2026-05-30",
+  "supplier": {
+    "id": "SUP-0075",
+    "name": "CloudNet Solutions Co., Ltd.",
+    "tax_id": "0105565077777"
+  },
+  "bill_to": "Acme Corporation (Thailand) Co., Ltd.",
+  "line_items": [
+    {
+      "description": "Network Switch Cisco Catalyst 9300",
+      "qty": 6,
+      "unit_price": 85000,
+      "total": 510000
+    },
+    {
+      "description": "SFP+ Transceiver Module 10G",
+      "qty": 12,
+      "unit_price": 2500,
+      "total": 30000
+    }
+  ],
+  "subtotal": 540000,
+  "vat_7_percent": 37800,
+  "total_amount": 577800,
+  "currency": "THB",
+  "payment_terms": "Net 30",
+  "po_reference": "PO-2026-0201"
+}

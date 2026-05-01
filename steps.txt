@@ -14,3 +14,9 @@ orchestrate logout --name <environment-name>
 
 # remove wxo env
 orchestrate env remove -n <environment-name>
+
+
+### Note
+orchestrate tools import -k python -f tools\tool_invoice_extract.py
+
+orchestrate tools import -k python -f tools\tool_fraud_check.py

@@ -4,7 +4,7 @@ name: knowledge_base_abc_policy
 
 description: General information about ABC Insurance Product Tiers
 documents:
- - abc_product_tier_detail.pdf
+ - knowledge\abc_product_tier_detail.pdf
 
 conversational_search_tool:
       generation:
