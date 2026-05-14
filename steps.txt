@@ -20,3 +20,9 @@ orchestrate env remove -n <environment-name>
 orchestrate tools import -k python -f tools\tool_invoice_extract.py
 
 orchestrate tools import -k python -f tools\tool_fraud_check.py
+
+Troubleshooting
+1. send-gmail tool token expired.
+    - re-new refresh token from google oauth cred.json
+    - update new cred > cred_update.json to secret manager
+    - re-deploy cloud run function
